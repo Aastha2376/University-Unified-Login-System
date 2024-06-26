@@ -1,0 +1,84 @@
+
+* {
+    box-sizing: border-box;
+}
+
+#tabsDiv {
+    border: 2px solid #c0c0c0;
+}
+
+#tabsDiv ul {
+    height: 600px;
+    padding: 0px 5px;
+}
+
+#tabsDiv li {
+    width: 15%;
+    height: 60px;
+}
+
+#tabsDiv button {
+    float: left;
+    border: 3px solid #c0c0c0;
+    background-color: #a2d2ff;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add margin between buttons */
+}
+
+/* Button styling */
+#tabsDiv button {
+    display: block;
+    padding: 20px 15px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+#tabsDiv button:hover {
+    background-color: #bde0fe;
+}
+
+#tabsDiv button.active {
+    background-color: #0077b6;
+}
+
+/* Content box styling */
+.contentClass {
+    display: none;
+    padding: 15px;
+    width: 70%;
+	height: 90%;
+    border-radius: 10px;
+    overflow-y: auto;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header style */
+.contentClass h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Anchor style */
+.contentClass a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Anchor hover effect */
+.contentClass a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden; /* Prevent content overflow */
+    transition: height 0.3s ease; /* Smooth height transition */
+}

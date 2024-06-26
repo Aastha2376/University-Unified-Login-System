@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            background-image: url("college.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .welcome-container {
+            display: inline-block;
+	    background-color: white;
+	    padding: 20px; 
+	    margin-bottom: 20px;
+       }
+    </style>
+    <link rel="stylesheet" href="styles_dashboard.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h2>Welcome!</h2>
+    </div>
+    <div class="container">
+    <div id="tabsDiv"> 
+        <div id="timetable" class="contentClass"> 
+            <h3>Select your batch for respective timetables:</h3> 
+            <a href="timetable_2021_2025.html"><button>2021-2025</button></a>
+            <a href="timetable_2022_2026.html"><button>2022-2026</button></a>
+            <a href="timetable_2023_2027.html"><button>2023-2027</button></a>
+        </div> 
+
+        <div id="portals" class="contentClass"> 
+            <h3>Important University Portals</h3> 
+  
+            
+                <a href="http://siuexam.siu.edu.in/forms/resultview.html"><button><img src="result_icon.png" alt="Result Icon" width="30" height="30">SIU Result Portal</button></a>
+                <a href="http://intechsolutionspune.in/siu/studentloginm.html"><button><img src="student_icon.jpg" alt="Student Icon" width="30" height="30">SIU Student Management System</button></a>
+                <a href="https://siufinance.ishinfo.com/UGStudentAdmission/Login.aspx"><button><img src="finance_icon.png" alt="Finance Icon" width="30" height="30">SIU Finance Portal</button></a>
+                <a href="http://10.10.71.20:8012/feedback/"><button><img src="feedback_icon.png" alt="Feedback Icon" width="30" height="30">SIT Feedback Portal</button></a>
+            
+        </div> 
+  
+        <div id="contact_info" class="contentClass"> 
+            <h3>Important Contacts</h3> 
+            <p>
+                <div>
+                    <img src="contact_info.png" alt="College Contact Info" width="700" height="440">
+                </div>
+            </p>
+           
+            
+        </div> 
+  
+        <div id="event_calender" class="contentClass"> 
+            <h3>Schedule Of Events for Academic Year 2023-24</h3> 
+            <p>
+                <div>
+                    <img src="academic_calender.png" alt="Academic Calender" width="650" height="440">
+                </div>
+            </p>
+           
+        </div> 
+  
+        <ul class="ulClass" style="height:600px"> 
+            <li style="list-style-type:none;"> 
+                <button class="linkClass" onclick= 
+                    "displayContent(event, 'timetable')"> 
+                    <img src="timetable_icon.png" alt="Timetable Icon" width="30" height="30">Timetable 
+                </button> 
+            </li> 
+
+            <li style="list-style-type:none;"> 
+                <button class="linkClass" onclick= 
+                    "displayContent(event, 'portals')"> 
+                    <img src="portal_icon.jpg" alt="Portal Icon" width="30" height="30">Important Portals 
+                </button> 
+            </li> 
+              
+            <li style="list-style-type:none;"> 
+                <button class="linkClass" onclick= 
+                    "displayContent(event, 'contact_info')"> 
+                    <img src="contact_icon.png" alt="Contact Icon" width="30" height="30">Contact Infomation 
+                </button> 
+            </li> 
+  
+            <li style="list-style-type:none;"> 
+                <button class="linkClass" onclick= 
+                    "displayContent(event, 'event_calender')"> 
+                    <img src="event_icon.jpg" alt="Event Icon" width="30" height="30">Event Calender
+                </button> 
+            </li> 
+
+            <li style="list-style-type:none;"> 
+                <a href="index.php"><button><img src="logout_icon.jpg" alt="Logout Icon" width="30" height="30">Logout</button></a>
+            </li> 
+
+  
+        </ul> 
+    </div>
+    </div>
+    <script src="script_dashboard.js"></script>
+</body>
+</html>
